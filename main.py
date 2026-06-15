@@ -4,6 +4,7 @@
 # Crear función para leer el archivo CSV
 
 
+
 def leer_archivo():
     lista_paises = []
     # Abrir  archivo:
@@ -422,6 +423,7 @@ def mostrar_estadisticas(lista_paises):
         )
 
 def mostrar_paises(lista_paises):
+    # Recorrer lista de países.
     for pais in lista_paises:
                     print()
                     print("Nombre:", pais["nombre"])
@@ -429,14 +431,16 @@ def mostrar_paises(lista_paises):
                     print("Superficie:", pais["superficie"])
                     print("Continente:", pais["continente"])
 
+# Variables iniciales
 lista_paises = leer_archivo()
 opcion = 0
 
 
-while opcion != 9:
+while opcion != 10:
     mostrar_menu()
-
-    try: 
+    # Control de errores  en el ingreso de opciones.
+    try:
+        # Pedir datos al usuario. 
         opcion = int(input(" Ingrese una opción usando los números del 1 - 9.: "))
         if opcion == 1:
             agregar_pais(lista_paises)
