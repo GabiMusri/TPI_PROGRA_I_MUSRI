@@ -2,12 +2,6 @@
 # Alumno: Musri, Franco Gabriel 
 
 # Crear función para leer el archivo CSV
-import os
-
-os.chdir(r"C:\Users\Gabri\OneDrive\TODO\PROGRAMACION\PROGRAMACIÓN 1\TPI PROGRA I\REPO\TPI_PROGRA_I_MUSRI")
-import os
-
-print(os.getcwd())
 
 
 def leer_archivo():
